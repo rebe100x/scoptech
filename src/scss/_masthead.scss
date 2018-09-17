@@ -1,0 +1,55 @@
+// Styling for the masthead
+@import 'variables';
+@import 'mixins';
+header.masthead {
+  background-color: $pink;
+  transition: background-color 1s ease-in-out;
+  text-align: center;
+  color: white;
+
+  .intro-text {
+    padding-top: 30vh;
+    padding-bottom: 15vh;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
+    .btn-primary {
+          box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+  }
+}
+
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 40vh;
+      padding-bottom: 25vh;
+
+    .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
