@@ -33,7 +33,7 @@ npm run build:dev
 npm run build:prod
 git add .
 git commit -m 'please do not forget the comment !'
-git push origin master
+git push origin develop
 ```
 
 Note : if you want to change only html and text you don't need to launch the webpack compiler
