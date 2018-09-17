@@ -16,8 +16,7 @@ To install the code localy, you need to
  ```sh
  git clone https://github.com/rebe100x/scoptech.git
  cd scoptech
- git fetch
- git branch develop
+ git pull origin develop
  ```
 - install the dependencies
 ```sh
@@ -29,8 +28,9 @@ npm install
 npm run build:dev
 ```
 
-- make your changes and commit to the develop branch
+- make your changes, build the production bundle and commit to the develop branch
 ```sh
+npm run build:prod
 git add .
 git commit -m 'please do not forget the comment !'
 git push origin develop
