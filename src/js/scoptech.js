@@ -3,17 +3,27 @@ function randRange(data) {
       return newTime;
 }
 
-function toggleSomething() {
-      var timeArray = new Array(4000, 3500, 5000, 2500, 2000, 3000, 1000, 1500);
-      var colorArray = new Array(["#ee5253","#feca57"],["#1dd1a1","#ee5253"],["#341f97","#feca57"],["#feca57","#ee5253"],["#0abde3","#ee5253"],["#54a0ff","#ee5253"]);
+function toggleBg() {
+      var timeArray = new Array(7000, 10000, 15000);
+      var colorArray = new Array(
+        ["#ee5253","#feca57", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-1.jpg'"],
+        ["#1dd1a1","#ee5253", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-2.jpg'"],
+        ["#341f97","#feca57", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-3.jpg'"],
+        ["#feca57","#ee5253", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-4.jpg'"],
+        ["#0abde3","#ee5253", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-5.jpg'"]);
 
       var color = randRange(colorArray);
       jQuery('.masthead').css('backgroundColor',color[0])
-      jQuery('#mainNav .navbar-brand').css('color',color[1])
+      jQuery('#mainNav .navbar-brand').css('color',color[1]);
+      jQuery('.masthead-layer').fadeOut(1000, function(){
+        $(this).css('background-image',color[2]).fadeIn(1000);
+      });
+
+
 
       clearInterval(timer);
-      timer = setInterval(toggleSomething, randRange(timeArray));
+      timer = setInterval(toggleBg, randRange(timeArray));
 }
 
-var timer = setInterval(toggleSomething, 1000);
+var timer = setInterval(toggleBg, 5000);
 

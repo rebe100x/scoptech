@@ -1,7 +1,7 @@
 // Styling for the navbar
 @import 'variables';
 @import 'mixins';
-#mainNav {
+#mainNav, #smallNav {
   background-color: $gray-900;
   .navbar-toggler {
     font-size: 12px;
@@ -15,10 +15,10 @@
   }
   .navbar-brand {
     color: $primary;
-    transition: color 0.75s linear;
+    transition: color 5s linear;
     font-weight: bold;
     @include script-font-scoptech;
-    font-size: 3.5em;
+    font-size: 2.1em;
     &.active,
     &:active,
     &:focus,
@@ -44,19 +44,18 @@
   }
 }
 @media(min-width:992px) {
-  #mainNav {
+  #mainNav, #smallNav {
     padding-top: 25px;
     padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
     .navbar-brand {
-      font-size: 3.5em;
+      font-size: 2.75em;
       font-weight: bold;
-      transition: color 0.75s linear;
-      transition: all 0.3s;
+
+      transition: color 5s linear;
+      transition: all 0.5s ease;
     }
     .navbar-nav {
       .nav-item {

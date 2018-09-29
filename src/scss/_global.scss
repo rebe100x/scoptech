@@ -100,16 +100,16 @@ img::-moz-selection {
 }
 
 .logo-scoptech-small-light{
-  font-family: 'Sunshiney';
+  @include script-font-scoptech;
   color: $red;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: normal;
 }
 .logo-scoptech-small-dark{
-  font-family: 'Sunshiney';
+  @include script-font-scoptech;
   color: $primary;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: normal;
 }

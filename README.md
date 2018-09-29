@@ -1,6 +1,6 @@
 # scoptech
 
-Scoptech is the website of the scoptech group.
+Scoptech is the website of the scoptech group : https://scoptech.org
 
 This website is under construction and a robots.txt prevents from being indexed.
 
