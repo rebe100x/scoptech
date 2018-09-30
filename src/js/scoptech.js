@@ -6,11 +6,11 @@ function randRange(data) {
 function toggleBg() {
       var timeArray = new Array(7000, 10000, 15000);
       var colorArray = new Array(
-        ["#ee5253","#feca57", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-1.jpg'"],
-        ["#1dd1a1","#ee5253", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-2.jpg'"],
-        ["#341f97","#feca57", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-3.jpg'"],
-        ["#feca57","#ee5253", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-4.jpg'"],
-        ["#0abde3","#ee5253", "url('/Users/renaud/Projects/scoptech/scoptech/img/scoptech-5.jpg'"]);
+        ["#ee5253","#feca57", "url('../img/scoptech-1.jpg'"],
+        ["#1dd1a1","#ee5253", "url('../img/scoptech-2.jpg'"],
+        ["#341f97","#feca57", "url('../img/scoptech-3.jpg'"],
+        ["#feca57","#ee5253", "url('../img/scoptech-4.jpg'"],
+        ["#0abde3","#ee5253", "url('../img/scoptech-5.jpg'"]);
 
       var color = randRange(colorArray);
       jQuery('.masthead').css('backgroundColor',color[0])
